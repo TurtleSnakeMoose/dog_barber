@@ -1,0 +1,32 @@
+.appointment-list{
+    /**/
+}
+
+.appointment-list .no-data {
+    color: gray;
+    text-align: center;
+}
+
+.appointment-list .td-appt-actions{
+    text-align: center;
+}
+
+.appointment-list .appt-action:hover{
+    font-weight: bold;
+}
+
+.appointment-list tbody {
+    display: block;
+    height: 300px;
+    overflow: auto;
+}
+
+.appointment-list thead, .appointment-list tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;/* even columns width , fix width of table too*/
+}
+
+.appointment-list thead {
+    width: calc( 100% - 1em )/* scrollbar is average 1em/16px width, remove it from thead width */
+}
